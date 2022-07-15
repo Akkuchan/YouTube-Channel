@@ -25,7 +25,7 @@ public class StudentScoreCalculatorTestParams {
     }
 
     @Test
-    @Parameters(method = "testValues")
+    @Parameters(method = "testValues")// parameter로 사용할 객체를 가져오기 위해 property로 method에 메서드명을 입력해준다.(String으로)
     public void studentScoreCalculator(int mathsScore, int literacyScore, int expectedScore){
 
         StudentScoreCalculator sc = new StudentScoreCalculator();
