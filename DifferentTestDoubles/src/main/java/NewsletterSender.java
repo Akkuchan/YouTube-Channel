@@ -11,7 +11,7 @@ public class NewsletterSender {
     }
 
     public void sendNewsletter(String subject){
-        List<String> emails = subscribersDatabase.getSubscribers();
+        List<String> emails = subscribersDatabase.getSubscribers();// Repository의 메서드 호출
 
         if(numberOfSubscribers() == 0){
             throw new ZeroSubscribersException();
